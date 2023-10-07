@@ -10,7 +10,7 @@
     <input type="number" id="valorCompra" placeholder="Insera o valor em R$">
     <button onclick="calcularDesconto()">Calcular Desconto</button>
     <p>Desconto aplicado: <span id="desconto"></span></p>
-    
+
     <script>
         function calcularDesconto(){
             const valorCompra = parseFloat(document.getElementById('valorCompra').value);
@@ -19,11 +19,16 @@
                 desconto = 0.2;
 
             } else if (valorCompra > 100){
-                desconto = 0.1
+                desconto = 0.1;
 
             }else if (valorCompra <= 100){
                 desconto = 0.05;
             }
+
+            const valorDesconto = valorCompra * desconto;
+                        document.getElementById
+                        ('desconto').textContent =
+                        `R$ ${valorDesconto.toFixed(2)}`; 
         }
     </script>
 
