@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+
+<form id="productForm">
+    <label for="productName">Nome do Produto:</label>
+    <input type="text" id="productName" required>
+
+    <label for="productPrice">Preço do ]Produto:</label>
+    <input type="number" id="productPrice" required>
+
+    <button type="button" onclick="addProduct()">Adicionar Produto</button>
+</form>
+
+<h2>Produtos Cadastrados:</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Nome do Produto</th>
+            <th>Preço do Produto</th>
+        </tr>
+    </thead>
+    <tbody id="productList"></tbody>
+</table>
+    
+</body>
+</html>
